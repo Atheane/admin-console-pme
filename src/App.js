@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Breadcrumb, Row, Col, Icon } from 'antd';
+import Usage from './components/Usage';
 
 import './App.css';
 import './logo.svg';
@@ -37,7 +38,9 @@ class App extends Component {
           </Row>
         </Header>
         <Content style={{ padding: '0 50px', marginTop: 64 }}>
-          <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>Content</div>
+          <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>
+            <Usage> </Usage>
+          </div>
         </Content>
         <Footer style={{ textAlign: 'center', backgroundColor: '#373839', color: '#fff'}}>
           <Row>
