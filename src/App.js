@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Layout, Menu, Breadcrumb, Row, Col } from 'antd';
+import { Layout, Menu, Breadcrumb, Row, Col, Icon } from 'antd';
 
 import './App.css';
 import './logo.svg';
@@ -20,7 +20,8 @@ class App extends Component {
                 theme="primary"
                 mode="horizontal"
                 defaultSelectedKeys={['1']}
-                style={{ lineHeight: '64px', display: 'flex', justifyContent: 'flex-start'}}
+                style={{ lineHeight: '64px', display: 'flex',
+                  justifyContent: 'flex-start'}}
               >
                 <Menu.Item key="2">Usage</Menu.Item>
                 <Menu.Item key="3">Rapport d'audit</Menu.Item>
@@ -38,8 +39,21 @@ class App extends Component {
         <Content style={{ padding: '0 50px', marginTop: 64 }}>
           <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>Content</div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>
-          Ant Design ©2016 Created by Ant UED
+        <Footer style={{ textAlign: 'center', backgroundColor: '#373839', color: '#fff'}}>
+          <Row>
+            <Col span={8} >
+              <Icon type="phone" />
+              <span>  +33 6 27 99 13 31 </span>
+            </Col>
+            <Col span={8} >
+              <Icon type="mail" />
+              <span>  contact@mailoop.com </span>
+            </Col>
+            <Col span={8} >
+              <Icon type="user" />
+              <span>  www.mailoop.com </span>
+            </Col>
+          </Row>
         </Footer>
       </Layout>
 
