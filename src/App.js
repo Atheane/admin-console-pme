@@ -7,10 +7,18 @@ import './logo.svg';
 
 const { Header, Content, Footer } = Layout;
 
-
+//to-do conditional renderiong
+// Content = () => {
+//   if (nav === "Usage") {
+//     return <Usage />;
+//   } else if  (nav === "RapportAudit") {
+//     return <RapportAudit />;
+//   }
+// }
 
 class App extends Component {
   render() {
+
     return (
 
       <Layout style={{height:'100vh', width: '100%'}}>
@@ -31,6 +39,7 @@ class App extends Component {
                 <Menu.Item key="6">Paramètres</Menu.Item>
 
               </Menu>
+
             </Col>
             <Col span={3} pull={21}>
               <img src='mailoop_icon.png' height='50' width='50' />
@@ -40,6 +49,7 @@ class App extends Component {
         <Content style={{ padding: '0 50px', marginTop: 64 }}>
           <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>
             <Usage> </Usage>
+
           </div>
         </Content>
         <Footer style={{ textAlign: 'center', backgroundColor: '#373839', color: '#fff'}}>
