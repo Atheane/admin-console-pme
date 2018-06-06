@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Row, Col, Table } from 'antd';
+import { Card, Row, Col, Table, Icon } from 'antd';
 
 const gridStyle = {
   width: '25%',
@@ -61,33 +61,39 @@ class Usage extends Component {
         <Row type="flex" justify="space-around">
 -           <Card.Grid style={gridStyle} >
               <Row>
-                <img src='mailoop_icon.png' height='50' width='50'/>
+                <img src='mailoop_icon.png' height='40' width='40'/>
               </Row>
+              <br />
               <Row>
                 <h4> Feedback Email </h4>
               </Row>
+              <br />
               <Row>
                 <Table columns={columns} dataSource={dataFeedback} size="small" />
               </Row>
             </Card.Grid>
             <Card.Grid style={gridStyle} >
               <Row>
-                <img src='mailoop_icon.png' height='50' width='50'/>
+                <img src='icone_deconnexion_32.png' height='40' width='40'/>
               </Row>
+              <br />
               <Row>
                 <h4> Smart Deconnexion </h4>
               </Row>
+              <br />
               <Row>
                 <Table columns={columns} dataSource={dataSmart} size="small" />
               </Row>
             </Card.Grid>
             <Card.Grid style={gridStyle} >
               <Row>
-                <img src='mailoop_icon.png' height='50' width='50'/>
+                <Icon type="line-chart" style={{ fontSize: 36, color: '#DD8244' }} />
               </Row>
+              <br />
               <Row>
                 <h4> Audit </h4>
               </Row>
+              <br />
               <Row>
                 <Table columns={columns} dataSource={dataAudit} size="small" />
               </Row>
